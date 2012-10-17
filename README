@@ -1,0 +1,24 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=4275
+
+Syntax file for SAP HANA
+
+Supports all SQL elements of the SAP HANA SP4 release.
+
+Assuming you are editing a .sql file (Vim sets the filetype to be SQL), then by default Vim assumes Oracle syntax.
+
+This syntax file works in conjunction with ftplugin/sql.vim, indent/sql.vim and syntax/sql.vim to load the correct SQL dialect.
+
+To change from Oracle syntax to a different SQL dialect you can initiate this by running:
+:SQLSetType sqlhana.vim
+or
+:SQLSetType <tab key> to cycle through all supported SQL dialects.
+or 
+:SQLSetType sqlh<tab key> to cycle through all supported SQL dialects starting with "sqlh". 
+
+
+Or to change Vim's default Oracle dialect to HANA you can put the following in your .vimrc:
+    let g:sql_type_default = 'sqlhana'
+
+To read more on these options see:
+:h sql.txt
+
